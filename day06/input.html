@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input type속성</title>
+    <style>
+        /* body{
+            width: 800px;
+            margin: 0 auto;
+        } */
+       
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>type 속성</legend>
+                <ul>
+                    <p>아이디 :<input type="text" name="uid" autocomplete="on" autofocus required></p>
+                    <!-- autocomplete="on" 자동기억  -->
+                    <p>비밀번호 :<input type="password" name="pwd" placeholder="영어, 숫자 포함 8자이상"></p>
+                    <!--  placeholder="영어, 숫자 포함 8자이상" 힌트말  -->
+                    <p>검색 :<input type="search" disabled></p>
+                    <!-- disabled 검색 못하게 비활성화 시킴 -->
+                    <p>이메일 :<input type="email" title="이메일 입력" value="test@naver.com" readonly></p>
+                    <!-- title="이메일 입력" 말풍선 도움말, 
+                        value="test@naver.com"는 이메일 지정, readonly는 읽기만 가능 -->
+                    <p>전화번호 :
+                        <select>
+                            <option>지역번호</option>
+                            <option>02</option>
+                            <option>031</option>
+                            <option>032</option>
+                        </select>
+                        <input type="tel">
+                    </p>
+                    <P>컬러선택 :<input type="color"></P>
+                    <p>수량 : <input type="number" min="1" max="10" value="1"></p>
+                    <p>만족도 : <input type="range" min="1" max="10" value="1"></p>
+                    <p>
+                        <label>예<input type="radio" name="receive" value="yes" checked="checked"></label>
+                        <label>아니오<input type="radio" name="receive" value="no"></label>
+                    </p>
+                    <p>
+                        <label>html<input type="checkbox" checked="checked"></label>
+                        <label>css<input type="checkbox"></label>
+                    </p>
+                    <p><label><input type="submit" value="전송"></label></p>
+                    <p><label><input type="reset" value="취소"></label></p>
+                    <p><button type="button" onclick="alert('동의감사')">확인</button></p>
+                    <p><input type="button" value="확인"></p>
+                    <p><input type="image" src="./images/bt.png" alt="검색"></p>
+                    <p><label><input type="file" multiple></label></p>
+                    <!-- multiple 파일을 여러개 첨부 할 수 있다. -->
+
+
+
+
+                    <!-- <li><label for="uid">아이디 :</label>
+                    <input type="text" name="uid">
+                    </li>
+                    <li><label for="password">비밀번호 :</label>
+                    <input type="password" name="password">
+                    </li>
+                    <li><label for="search">검색 :</label>
+                    <input type="search" name="search">
+                    </li>
+                    </li>
+                    <li><label for="email">이메일 :</label>
+                    <input type="email" name="email">
+                    </li>
+                    </li>
+                    <li><label for="phone">전화번호 :</label>
+                    <input type="tel" name="phone">
+                    </li>
+                    <li><label for="color">컬러선택 :</label>
+                    <select>
+                        <option>black</option>
+                        <option></option>
+                        <option></option>
+                    </select>
+                    </li>
+                    </li>
+                    <li><label for="number">수량 :</label>
+                    <input type="number" min="1" max="10" value="1">
+                    </li>
+                    </li>
+                    <li><label for="range">만족도 :</label>
+                    <input type="range" name="range">
+                    </li>
+                    </li>
+                    <label>예<input type="radio" name="receive" value="yes"></label>
+                    <label>아니오<input type="radio" name="receive" value="no"></label>
+                    </li>
+                    </li>
+                    <p>
+                    <label>html<input type="checkbox"></label>
+                    <label>css<input type="checkbox"></label>
+                    </p> -->
+
+                </ul>
+        </fieldset>
+    </form>
+</body>
+</html>

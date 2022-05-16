@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표 관련 요소</title>
+    <style>
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td{border: 1px solid black;}
+        thead{background:#eee;}
+        .c1{background: #ccc;}
+    
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <!-- <col style="background:#f00"> 동일 -->
+            <col class="c1">
+            <col class="c2">
+        </colgroup>
+        <caption>웹 퍼블리싱 점수</caption>
+        <thead>
+            <tr>
+                <th>교과목</th>
+                <th>점수</th>
+            </tr>
+        </thead>
+        <tbady>
+            <tr>
+                <th>HTML</th>
+                <td rowspan="2">93</td>
+            </tr>
+        </tbady>
+        <tbady>
+            <tr>
+                <th>CSS</th>
+                <!-- <td>93</td> 윗줄에 rowspan를 해서 생략된다. -->
+            </tr>
+        </tbady>
+        <tfoot>
+            <tr>
+                <th>평균</th>
+                <td>92.5</td>
+            </tr>
+            <tr>
+                <th colspan="2">비고(셀합치기)</th>
+                <!-- <td></td>는 colspan이 되서 생략된다.  -->
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
