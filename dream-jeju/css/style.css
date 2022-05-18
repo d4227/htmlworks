@@ -23,6 +23,8 @@ nav{width: 800px; float: right;}
     margin-right: 20px; border-radius: 20px;}
 #healing, #activity{height: 300px;}
 /* height는 주지 않으면 줄이 맞춰지지 않는다. */
+#healing .schedule ul li{list-style: none; margin: 10px;}
+#healing h3{margin: 20px 0 10px; }
 #sightseeing ul li{margin: 10px 30px;}
 #sightseeing ul li a{text-decoration: none;}
 

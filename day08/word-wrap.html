@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>word-wrap 속성</title>
+    <style>
+        ul{
+            width: 200px;
+            border: 1px solid #000;
+        }
+        ul:nth-child(2){
+            word-wrap: break-word;
+            /* word-break: keep-all; 같이 사용가능 */
+        }
+        /* 한글은 지정한 박스 안에 들어가는데, 영문은 들어가지 않는다.
+        그래서 word-wrap: break-word;를 써서 박스 안에 넣는다. */
+        ul:nth-child(3){
+            word-wrap: break-word;
+            word-break: keep-all;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <p>이름: 홍길동</p>
+        </li>
+        <li>
+            <p>이메일: hongsadjasjdl;kasjl;jsd;lfsdpsddfs@hanmail.net</p>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <p>이름: 홍길동</p>
+        </li>
+        <li>
+            <p>이메일: hongsadjasjdl;kasjl;jsd;lfsdpsddfs@hanmail.net</p>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <p>이름: 홍길동</p>
+        </li>
+        <li>
+            <p>이메일: hongsadjasjdl;kasjl;jsd;lfsdpsddfs@hanmail.net</p>
+        </li>
+    </ul>
+</body>
+</html>
