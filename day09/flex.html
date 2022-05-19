@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        #wrap{
+            display: flex;
+            /* display: inline-block; 과 같은 수평 정렬이 된다. */
+
+            flex-direction: column;
+            /* flex-direction: column; 을 쓰면 다시 수직 정렬이 된다. */
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background: #00f;
+            margin: 20px;
+            /* display: inline-block; */
+
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
