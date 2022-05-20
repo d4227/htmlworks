@@ -1,0 +1,43 @@
+*{margin: 0; padding: 0;}
+#container{
+    width: 1000px;
+    margin: 0 auto;
+}
+nav{
+    height: 60px;
+    background-color: rgb(1,1,168);
+}
+#mainMenu, #subMenu{
+    list-style: none;
+    text-align: center;
+}
+#mainMenu > li{
+    display: inline-block;
+    background: rgb(1,1,168);
+    margin: 10px;
+}
+#mainMenu > li > a{
+    display: block;
+    padding: 10px 30px;
+    text-decoration: none;
+    margin: 0 40px;
+    background: rgb(1,1,168);
+    color: #fff;
+    font-size: 1em;
+}
+
+
+/*  서브 메뉴 */
+#subMemu{list-style: none; text-align: center;}
+#subMenu{
+    position: absolute;
+    top: 60px;
+    background: #012881;
+    visibility: hidden;
+}
+#subMenu > li{padding: 15px 30px;}
+#subMenu > li > a{
+    text-decoration: none;
+    color: rgba(255,255,255,0.6);
+}
+#mainMenu > li:hover #subMenu{visibility: visible;}
