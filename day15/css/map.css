@@ -1,0 +1,35 @@
+.hdd{
+    width: 0;
+    height: 0;
+    text-indent: -999px;
+    overflow: hidden;
+    position: absolute;
+    left: -999px
+}
+.insure{
+    position: relative;
+    max-width: 700px; 
+    /* max-width로 줄이면 창이 줄어도 이미지는 최대 700px에서 유지 */
+}
+.insure img{
+    width: 100%;
+}
+.insure a{
+    position: absolute;
+    display: block;
+    /* background: rgba(0,255,0,0.5); 박스 처음에 보이게 하려고 작성 후  투명도 0으로 수정*/
+    background: rgba(0,255,0,0);
+
+}
+.insure a.car{
+    width: 25%;
+    height: 30%;
+    left: 8%;
+    top: 64%;
+}
+.insure a.house{
+    width: 30%;
+    height: 35%;
+    left: 60%;
+    top: 59%;
+}
